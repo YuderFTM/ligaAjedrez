@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+// const {mongoose} = require('./database');
 
 ReactDOM.render(
   <React.StrictMode>

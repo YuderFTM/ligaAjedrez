@@ -7,8 +7,8 @@ import Registro from './components/Registro.jsx';
 import Nav from './components/Nav.jsx';
 import Principal from './components/Principal.jsx';
 import Partidos from './components/Partidos.jsx';
-
-
+import Campeonatos from './components/campeonatos.jsx';
+import CrearCamp from './components/crearCampeonatos.jsx';
 
 function Webpag() {
   return (
@@ -33,6 +33,16 @@ function Pagprin() {
 function Pagpartidos() {
   return (
       <Partidos /> 
+  );
+}
+function Pagcampeonatos() {
+  return (
+      <Campeonatos /> 
+  );
+}
+function Pagcrearcamp() {
+  return (
+      <CrearCamp /> 
   );
 }
 function App() {
@@ -64,6 +74,12 @@ function App() {
      
           <Route path="/partidos" element={<Pagpartidos />}>   
           </Route> 
+
+          <Route path="/campeonatos" element={<Pagcampeonatos />}>   
+          </Route> 
+
+          <Route path="/crearCampeonatos" element={<Pagcrearcamp />}>   
+          </Route>
         </Routes>
       </div>
     </Router>

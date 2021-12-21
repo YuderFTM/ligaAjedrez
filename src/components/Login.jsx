@@ -9,7 +9,8 @@ import './vendor/css-hamburgers/hamburgers.min.css';
 import './vendor/animsition/css/animsition.min.css';
 import './vendor/select2/select2.min.css';
 import './vendor/daterangepicker/daterangepicker.css';
-import home from '../assets/img/casa1.png'
+import home from '../assets/img/casa1.png';
+import inicio from './Principal';
 
 
 
@@ -69,9 +70,9 @@ const Login=()=>{
                                     <div className="wrap-login100-form-btn">
                                         <div className="login100-form-bgbtn"></div>
                                             
-                                        <button type="submit" className="login100-form-btn btn-primary" >
+                                        <a type="submit" className="login100-form-btn btn-primary" href="./inicio">
                                             Login
-                                        </button>
+                                        </a>
                                     </div>
                                 </div>
 
@@ -107,49 +108,3 @@ const Login=()=>{
 
 export default Login;
 
-
-
-
-// const Login = () => {
-
-
-//     const [datos, setDatos] = useState({
-//         nombre: '',
-//         apellido: ''
-//     })
-
-//     const handleInputChange = (event) => {
-//         console.log(event.target.name)
-//          console.log(event.target.value)
-//         setDatos({
-//             ...datos,
-//             [event.target.name] : event.target.value
-//         })
-//     }
-
-//     const enviarDatos = (event) => {
-//         event.preventDefault()
-//         console.log('enviando datos...' + datos.nombre + ' ' + datos.apellido)
-//     }
-
-//     return (
-//         <Fragment>
-//             <h1>Formulario</h1>
-//             <form className="row" onSubmit={enviarDatos}>
-//                 <div className="col-md-3">
-//                     <input type="text" placeholder="Nombre" className="form-control" onChange={handleInputChange} name="nombre"></input>
-//                 </div>
-//                 <div className="col-md-3">
-//                     <input type="text" placeholder="Apellido" className="form-control" onChange={handleInputChange} name="apellido"></input>
-//                 </div>
-//                 <button type="submit" className="btn btn-primary">Enviar</button>
-//             </form>
-//             <ul>
-//                 <li>{datos.nombre}</li>
-//                 <li>{datos.apellido}</li>
-//             </ul>
-//         </Fragment>
-//     );
-// }
- 
-// export default Login;
